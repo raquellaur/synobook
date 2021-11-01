@@ -1,0 +1,21 @@
+{
+    "name": "laur/synobook",
+    "description": "synobook synolia",
+    "authors": [
+        {
+            "name": "raquel.laur",
+            "email": "raquel.laur@synoext.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {
+        "ext-pdo": "*",
+      "ext-json": "*",
+        "symfony/yaml": "^5.3"
+    }
+
+}

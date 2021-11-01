@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="navbar">
+        <ul class="ul-list">
+            <li><a href="/Logout">Logout</a></li>
+            <li><a href="/List">List Task</a></li>
+        </ul>
+
+    </div>
+    <div class="infos">
+        <h1>Hello <?= $this->getCurrentUser()->getFirstname() . ' ' . $this->getCurrentUser()->getLastname() ?></h1>
+    </div>
+</div>
