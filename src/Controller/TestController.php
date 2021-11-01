@@ -2,23 +2,22 @@
 
 namespace App\Controller;
 
-use App\Entity\User;
+use App\Entity\Post;
+use App\Repository\PostRepository;
 use App\Repository\UserRepository;
 
 class TestController extends AbstractController implements ControllerInterface
 {
     public function execute()
     {
-        $manager = new UserRepository();
-        $user = new User();
-        $user->setFirstname('teste')
-            ->setPassword('teste')
-            ->setLogin('teste')
-            ->setLastname('teste')
-            ->setCreatedAt(new \DateTime())
-            ->setUpdated(new \DateTime());
+        $manager = new PostRepository();
+        $post = new Post();
+        $post->setName('teste')
+            ->setContent('teste')
+            ->setCreatedAt(new \DateTime());
 
-        $manager->save($user);
+
+        $manager->save($post);
 
 
     }
